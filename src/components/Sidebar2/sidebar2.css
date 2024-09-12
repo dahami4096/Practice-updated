@@ -1,0 +1,12 @@
+.side2-nav{
+    background: #15171c;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.side2-navIcon {
+    margin-left: 2rem;
+    
+}

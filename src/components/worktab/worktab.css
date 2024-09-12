@@ -1,0 +1,20 @@
+.worktab{
+    display: flex;
+    background: #d8d2d2;
+    flex: 1;
+    border-radius: 20px;
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    height: 94vh;
+  }
+
+  .worktab--title{
+    font-size: 25px;
+    color: #575555;
+    font-weight: 500;
+  }
+  
+
+  
