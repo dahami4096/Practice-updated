@@ -4,12 +4,12 @@ import './content.css';
 import steam from '../../assets/steam1.jpg';
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 import water from '../../assets/waterhand2.jpg';
-import fuel from '../../assets/fuel1.jpg';
+import fuel from '../../assets/fuel5.jpg';
 import co2 from '../../assets/co25.avif';
 import comair from '../../assets/comair2.jpg';
 import strnd from '../../assets/strend2.jpg';
 import elec from '../../assets/elec1.avif';
-import kpi from '../../assets/kpi1.jpg';
+import kpi from '../../assets/kpi4.png';
 
 
 const Content = () => {

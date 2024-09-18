@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import profileImage from '../../assets/logo.png'; // Update the path to the actual image file
+import profileImage from '../../assets/Profile.jpg'; // Update the path to the actual image file
 import './mypage.css'
 import { PiEye, PiEyeClosed } from "react-icons/pi";
 
@@ -10,8 +10,8 @@ const Profile = () => {
     lastName: "Nethsarani",
     position: "Control Engineer",
     username: "dahami_iot",
-    password: "password",
-    profileImage: "profileImage"
+    password: "iot1234#",
+    profileImage: profileImage
   });
 
   const [showPassword, setShowPassword] = useState(false);
@@ -68,7 +68,7 @@ const Profile = () => {
         <div className="profile-right">
           <div className="profile-details">
             <div className="field-group">
-              <div className="field">
+              <div className="profile-field">
                 <label>First name</label>
                 <input
                   type="text"
@@ -78,7 +78,7 @@ const Profile = () => {
                   disabled={!isEditing}
                 />
               </div>
-              <div className="field">
+              <div className="profile-field">
                 <label>Last name</label>
                 <input
                   type="text"
@@ -89,7 +89,7 @@ const Profile = () => {
                 />
               </div>
             </div>
-            <div className="field">
+            <div className="profile-field">
               <label>Position</label>
               <input
                 type="text"
@@ -99,7 +99,7 @@ const Profile = () => {
                 disabled={!isEditing}
               />
             </div>
-            <div className="field">
+            <div className="profile-field">
               <label>Username</label>
               <input
                 type="text"
@@ -109,7 +109,7 @@ const Profile = () => {
                 disabled={!isEditing}
               />
             </div>
-            <div className="field password-field">
+            <div className="profile-field ">
               <label>Password</label>
               <input
                 type={showPassword ? "text" : "password"}
@@ -126,7 +126,7 @@ const Profile = () => {
           <button className="edit-button" onClick={handleEdit}>
             {isEditing ? 'Save' : 'Edit'}
           </button>
-          <a href="/dashboard" className="dashboard-link">Dashboard</a>
+          <a href="/" className="dashboard-link">Dashboard</a>
         </div>
       </div>
     </div>
