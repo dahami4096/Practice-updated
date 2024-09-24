@@ -22,7 +22,7 @@ const Sidebar = () => {
                     padding="2px"
                     className="d-inline-block align-text-top"
                 />
-                Lion Brewley 
+                Lion Brewery 
                 <p>(Pvt.) Ltd.</p>
             </div>
 

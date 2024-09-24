@@ -18,7 +18,7 @@ const Content = () => {
             <ContentHeader />
 
             <div className='content-text'>
-                Welcome to Lion Brewley (Pvt.) Ltd.
+                Welcome to Lion Brewery (Pvt.) Ltd.
             </div>
             <p>The Ceylon Brewery was the first brewery established in Sri Lanka. It was established in 1849 by Sir Samuel Baker[3][4] (1821–93) as a cottage industry, catering for the British colonial tea plantations in the hill country retreat of Nuwara Eliya. Nuwara Eliya was the ideal location for a brewery, with its cool climate and natural spring water.[5] It wasn't however until 1881[6] that it began brewing on a commercial basis, with the Ceylon Brewery Company, managed by Messrs Bremer and Pa Bavary</p>
             <div className='row justify'>
