@@ -1,4 +1,4 @@
-import React from 'react'
+/* import React from 'react' */
 import { NavLink } from 'react-router-dom';  // Import NavLink from React Router
 import { BiNotification, BiSearch } from 'react-icons/bi'
 import { CgProfile } from "react-icons/cg";
@@ -28,7 +28,7 @@ const ContentHeader = () => {
                     to='/mypage'  // Use 'to' instead of 'href'
                     className={({ isActive }) => isActive ? 'item active' : 'item'}  // Automatically handles 'active' class
                 >
-                    <div class="modal-dialog modal-dialog-scrollable">
+                    <div className="modal-dialog modal-dialog-scrollable">
                         <div className='notify'>
                             < CgProfile className='icon' />
                         </div>
