@@ -11,7 +11,7 @@ import CO2 from './pages/co2/Co2';
 import SteamTrend from './pages/steamtrend/Steamtrend'
 import Kpi from './pages/kpi/Kpi'
 import Elec from './pages/elec/Elec';
-import Profile from './pages/profile/Profile';
+/* import Profile from './pages/profile/Profile'; */
 import Mypage from './pages/mypage/Mypage'
 
 export default function App() {
@@ -29,7 +29,7 @@ export default function App() {
           <Route path="steamtrend" element={<SteamTrend />} />
           <Route path="elec" element={<Elec />} />
           <Route path="kpi" element={<Kpi />} />
-          <Route path="profile" element={<Profile />} />
+ {/*          <Route path="profile" element={<Profile />} /> */}
           <Route path="mypage" element={<Mypage />} />
 
           {/* Add more routes as needed */}

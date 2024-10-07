@@ -5,7 +5,7 @@
   height: 100vh;
   /* Full viewport height */
   width: auto;
-  background-color: #e8f0ef;
+  background-color: #d9deeb;
   /* Optional background color */
   padding: 30px;
   margin: 50px;
@@ -98,7 +98,7 @@ input {
 }
 
 .edit-button {
-  background-color: #656e6b;
+  background-color: #404347;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -110,7 +110,7 @@ input {
 }
 
 .edit-button:hover {
-  background-color: #738a7d;
+  background-color: #73828a;
   transform: scale(1.03);
 }
 

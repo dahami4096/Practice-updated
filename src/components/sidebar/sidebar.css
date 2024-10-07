@@ -10,7 +10,7 @@
     text-align: center;
     flex-direction: column;
     padding: 10px;
-    color: #27374d;
+    color: #edf0f5;
     align-items: center;
     display: flex;
     gap: 10px;
@@ -37,22 +37,22 @@
     padding: 10px;
     border-radius: 10px;
     transition: 0.3s ease-in-out;
-    color: #1b1b1ace;
+    color: #f7f7f7ce;
 
 
 }
 
 .menu--list .item:hover{
     background:#eeebe7;
-    color: #444442;
+    color: #133158;
     border-radius: 40px;
     transform: scale(1.2);
 
 }
 
 .menu--list .item.active{
-    background:#033a1a;
-    color: #eeebe7;
+    background:#eeebe7;
+    color: #133158;
     border-radius: 40px;
     transform: scale(1.03);
 
