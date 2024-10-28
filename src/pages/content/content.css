@@ -1,61 +1,145 @@
 .main-container {
-    grid-area: main;
-    overflow-y: auto;
-    padding: 20px 20px;
-    color: rgba(255, 255, 255, 0.95);
-  }
-  
-  .main-title {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .tmain-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 20px;
-    margin: 15px 0;
-  }
-  
-  .tcard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 8px 15px;
-    border-radius: 15px;
-  }
-  
-  .tcard:first-child {
-    background-color: #dce5f7;
-  }
-  
-  .tcard:nth-child(2) {
-    background-color: #dce5f7;
-  }
-  
-  .tcard:nth-child(3) {
-    background-color: #dce5f7;
-  }
-  
-  .tcard:nth-child(4) {
-    background-color: #dce5f7;
-  }
-  
-  .tcard-inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .tcard-inner > .tcard_icon {
-    font-size: 25px;
-  }
-  
-  .pg-charts {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    margin-top: 60px;
-    height: 300px;
-  }
-  
+  grid-area: main;
+  overflow-y: auto;
+  padding: 20px 20px;
+  color: #2f2c2c99;
+
+}
+
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pg-charts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 70rem;
+  min-height: fit-content;
+  height: auto; /* Adjust to fit content */
+}
+
+
+.data-table {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 1200px;
+  /* Control the table's width */
+  background-color: #f9f9f9;
+  /* Light background for table */
+  border-radius: 15px;
+  /* Rounded corners for the entire table */
+  overflow: hidden;
+  /* Ensure rounded corners appear correctly */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  color: #555;
+  padding: 20px;
+}
+
+.data-table table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  /* Space between rows */
+  background-color: transparent;
+  /* Transparent background inside */
+}
+
+.data-table th,
+.data-table td {
+  padding: 12px 15px;
+  text-align: center;
+  /* Center-align text */
+  font-size: 14px;
+  color: #555;
+  /* Darker text color for readability */
+}
+
+.data-table th {
+  background-color: #f4f4f4;
+  /* Light background for header */
+  font-weight: bold;
+  font-size: 14px;
+  color: #333;
+  /* Darker text color for header */
+  border-top: none;
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+  /* Rounded corners for header */
+  padding: 15px;
+}
+
+.data-table tr {
+  transition: background-color 0.2s ease;
+  /* Smooth hover transition */
+  background-color: #fff;
+  /* White background for rows */
+  border-radius: 10px;
+  /* Rounded corners for each row */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+  /* Soft shadow around rows */
+}
+
+/* Remove any lines between rows */
+.data-table td {
+  border: none;
+}
+
+.data-table tr:hover {
+  background-color: #eaeaea;
+  /* Soft gray background on hover */
+}
+
+/* Style for the selected row */
+.data-table tr.selected-row {
+  background-color: #eceff1;
+  /* Light blue-gray background for selected row */
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  /* Shadow for selected row */
+}
+
+/* Ensure no sharp edges on the first and last rows */
+.data-table tr:first-child td:first-child {
+  border-top-left-radius: 10px;
+}
+
+.data-table tr:first-child td:last-child {
+  border-top-right-radius: 10px;
+}
+
+.data-table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+.data-table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+/* Additional hover effect */
+.data-table tr:hover td {
+  background-color: #eaeaea;
+}
+
+/* First column styling for better readability */
+.data-table td:first-child {
+  text-align: left;
+  /* Left-align the first column */
+  font-weight: 500;
+  /* Slightly bold for the first column */
+}
+
+/* Optional: Remove unnecessary lines between cells */
+.data-table th,
+.data-table td {
+  padding: 12px;
+  font-size: 13px;
+}
