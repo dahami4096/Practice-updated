@@ -15,6 +15,7 @@ import Elec from './pages/elec/Elec';
 import Mypage from './pages/mypage/Mypage'
 import Tcontent from './pages/content/Content';
 import Comp2 from './pages/component2/Comp2';
+import Comp3 from './pages/comp3/Comp3';
 
 export default function App() {
   return (
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="mypage" element={<Mypage />} />
           <Route path="content" element={<Tcontent />} />
           <Route path="component2" element={<Comp2 />} />
+          <Route path="comp3" element={<Comp3 />} />
           {/* Add more routes as needed */}
         </Routes>
       </div>
