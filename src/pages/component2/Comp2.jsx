@@ -44,7 +44,7 @@ const Comp2 = () => {
           <h4>CO2 Recovery Index - kg/hl</h4>
           <BarChart width={250} height={200} data={dataRecovery}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="name" interval={0} tick={{ fontSize: 7 }}/>
             <YAxis domain={[0, 4.5]} />
             <Tooltip />
             <Legend />
@@ -57,7 +57,7 @@ const Comp2 = () => {
           <h4>CO2 Consumption Index - kg/hl</h4>
           <BarChart width={250} height={200} data={dataConsumption}>
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" />
+            <XAxis dataKey="name" interval={0} tick={{ fontSize: 7 }}/>
             <YAxis domain={[0,3]}/>
             <Tooltip />
             <Legend />
