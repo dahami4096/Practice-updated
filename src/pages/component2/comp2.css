@@ -1,0 +1,67 @@
+/* Overall Container */
+.comp2-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+  
+  /* Graphs Container */
+  .comp2-conatinerg {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px;
+    min-width: 10rem;
+  }
+  
+  /* Individual Graph Card Styling */
+  .comp2-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+    text-align: center;
+    height:fit-content;
+  }
+  
+  /* Red Line Marker for Graphs */
+  .red-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: red;
+  }
+  
+  /* Descriptions Container */
+  .descriptions-container {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Descriptions Styling */
+  .descriptions-container h3 {
+    margin-bottom: 10px;
+  }
+  
+  .descriptions-container ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .descriptions-container ul li::before {
+    content: "■";
+    color: #000;
+    margin-right: 10px;
+  }
+  
