@@ -47,9 +47,22 @@ const waterData = [
   { name: "DEC", value: 0 },
 ];
 
-const sectionalIndicesData = [
+const sectionalIDkw = [
+  { section: "REF", target: 4.01, actual: 4.22 },
+  { section: "B&P", target: 1.12, actual: 1.17 },
+  { section: "F&P", target: 1.40, actual: 1.40 },
+  { section: "COM AIR ", target: 0.85, actual: 0.89 },
+];
+
+const sectionalIDkg = [
   { section: "B&P", target: 6.78, actual: 7.86 },
   { section: "F&P", target: 12.00, actual: 14.44 },
+];
+
+const sectionalIDhl = [
+  { section: "B&P", target: 1.95, actual: 2.52 },
+  { section: "F&P", target: 1.10, actual: 1.21 },  
+  { section: "Utility", target: 0.45, actual: 0.54 }
 ];
 
 const Comp3 = () => {
@@ -58,8 +71,8 @@ const Comp3 = () => {
       <div className="graph-container">
         {/* Electricity Index Graph */}
         <div className="graph-card">
-          <h3>Electricity Index - KWh/hl</h3>
-          <BarChart width={250} height={200} data={electricityData}>
+          <h6>Electricity Index - KWh/hl</h6>
+          <BarChart width={350} height={200} data={electricityData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis domain={[0, 15]} />
@@ -70,10 +83,25 @@ const Comp3 = () => {
           </BarChart>
         </div>
 
+        
+        {/* Sectional Indices Graph */}
+        <div className="graph-card">
+          <h6>Sectional Indices - kg/hl</h6>
+          <BarChart width={350} height={200} data={sectionalIDkw}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="section" tick={{ fontSize: 12 }} />
+            <YAxis domain={[0, 5]} />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="target" fill="#1898c1 " name="Target" />
+            <Bar dataKey="actual" fill="#d3ebf3 " name="Actual" />
+          </BarChart>
+        </div>
+
         {/* FO Index Graph */}
         <div className="graph-card">
-          <h3>FO Index - l/hl</h3>
-          <BarChart width={250} height={200} data={foIndexData}>
+          <h6>FO Index - l/hl</h6>
+          <BarChart width={350} height={200} data={foIndexData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis domain={[0, 2.5]} />
@@ -84,10 +112,26 @@ const Comp3 = () => {
           </BarChart>
         </div>
 
+
+        
+        {/* Sectional Indices Graph */}
+        <div className="graph-card">
+          <h6>Sectional Indices - kg/hl</h6>
+          <BarChart width={350} height={200} data={sectionalIDkg}>
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="section" tick={{ fontSize: 12 }} />
+            <YAxis domain={[0, 20]} />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="target" fill="#ba4a00  " name="Target" />
+            <Bar dataKey="actual" fill="#ebca90 " name="Actual" />
+          </BarChart>
+        </div>
+
         {/* Water Index Graph */}
         <div className="graph-card">
-          <h3>Water Index - hl/hl</h3>
-          <BarChart width={250} height={200} data={waterData}>
+          <h6>Water Index - hl/hl</h6>
+          <BarChart width={350} height={200} data={waterData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="name" tick={{ fontSize: 12 }} />
             <YAxis domain={[0, 5]} />
@@ -100,36 +144,25 @@ const Comp3 = () => {
 
         {/* Sectional Indices Graph */}
         <div className="graph-card">
-          <h3>Sectional Indices - kg/hl</h3>
-          <BarChart width={250} height={200} data={sectionalIndicesData}>
+          <h6>Sectional Indices - kg/hl</h6>
+          <BarChart width={350} height={200} data={sectionalIDhl}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="section" tick={{ fontSize: 12 }} />
-            <YAxis domain={[0, 20]} />
+            <YAxis domain={[0.00, 3.00]} />
             <Tooltip />
             <Legend />
-            <Bar dataKey="target" fill="#A9A9A9" name="Target" />
-            <Bar dataKey="actual" fill="#DAA520" name="Actual" />
+            <Bar dataKey="target" fill="#05770a " name="Target" />
+            <Bar dataKey="actual" fill="#bff3c2" name="Actual" />
           </BarChart>
         </div>
 
-        <div className="graph-card">
-          <h3>Water Index - hl/hl</h3>
-          <BarChart width={250} height={200} data={waterData}>
-            <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-            <YAxis domain={[0, 5]} />
-            <Tooltip />
-            <Legend />
-            <ReferenceLine y={3.5} label="3.50" stroke="red" />
-            <Bar dataKey="value" fill="#008000" />
-          </BarChart>
-        </div>
+
 
       </div>
 
       {/* Descriptions Section */}
       <div className="descriptions-container">
-        <h3>Description</h3>
+        <h6>Description</h6>
         <ul>
           <li>Reason 1 for Electricity Index</li>
           <li>Reason 2 for FO Index</li>
