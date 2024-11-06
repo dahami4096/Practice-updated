@@ -90,6 +90,13 @@ const Sidebar = () => {
                     <VscGraph className='icon' />
                     KPI
                 </NavLink>
+                <NavLink
+                    to='/glycol'
+                    className={({ isActive }) => isActive ? 'item active' : 'item'}
+                >
+                    <VscGraph className='icon' />
+                    Glycol
+                </NavLink>
             </div>
         </div>
     );
