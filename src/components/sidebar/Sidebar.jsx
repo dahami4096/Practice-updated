@@ -4,7 +4,7 @@ import { PiBowlSteam } from "react-icons/pi";
 import { MdOutlineWaterDrop, MdElectricBolt, MdCo2 } from "react-icons/md";
 import { GiOilDrum } from "react-icons/gi";
 import { BsWind } from "react-icons/bs";
-import { GiGlassBall } from "react-icons/gi";
+import { GiGlassBall, GiChemicalTank } from "react-icons/gi";
 import { HiTrendingUp } from "react-icons/hi";
 import { VscGraph } from "react-icons/vsc";
 import './sidebar.css';
@@ -94,7 +94,7 @@ const Sidebar = () => {
                     to='/glycol'
                     className={({ isActive }) => isActive ? 'item active' : 'item'}
                 >
-                    <VscGraph className='icon' />
+                    <GiChemicalTank className='icon' />
                     Glycol
                 </NavLink>
             </div>
