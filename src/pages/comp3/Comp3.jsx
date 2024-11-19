@@ -160,18 +160,6 @@ const Comp3 = () => {
 
       </div>
 
-      {/* Descriptions Section */}
-      <div className="descriptions-container">
-        <h6>Description</h6>
-        <ul>
-          <li>Reason 1 for Electricity Index</li>
-          <li>Reason 2 for FO Index</li>
-          <li>Reason 3 for Water Index</li>
-          {/* Add more reasons and details */}
-        </ul>
-      </div>
-
-      
     </div>
   );
 };
